@@ -120,6 +120,11 @@ addBtn.addEventListener("click",function(){
     };
     // console.log(6);
     csNotesObjectStore.add(data);
+    let isOpen=view.getAttribute("data-open");
+    if(isOpen=="true"){
+        view.click();
+        view.click();
+    }
 
 })
 
