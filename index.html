@@ -5,14 +5,81 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
+    <style>
+        #open{
+            height: 3rem;
+            width: 15rem;
+            font-size: 20px;
+            background-color: darkgrey;
+            color: black;
+            text-decoration: solid;
+        }
+        #add{
+            height: 2rem;
+            width: 7rem;
+            background-color: darkgray;
+            font-size: 16px;
+            border: 1px solid;
+            border-radius: 6px
+        }
+        #view{
+            height: 2rem;
+            width: 7rem;
+            background-color: darkgray;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+        input{
+            font-size: 17px;
+            padding: 8px;
+            height: 2rem;
+            width: 18rem;
+            overflow-x: auto;
+            border: 1px solid;
+            border-radius: 6px;
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        table,tr,td,tbody,th,thead{
+            border: 0.5px solid;
+            border-collapse: collapse;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        td button{
+            background-color: rgb(255, 51, 0);
+            color: white;
+            border-radius: 8px;
+            border: none;
+        }
+        table{
+            margin: 10px;
+        }
+        th{
+            background-color: rgb(189, 185, 185);
+            color: white;
+            border: 1px solid rgb(136, 136, 136);
+        }
+        th,td{
+            text-align: center;
+            height: 2rem;
+            width: 9rem;
+
+        }
+    </style>
 </head>
 <body>
     <button id="open">Open the Database</button>
     <hr/>
-    <input type="text">
+    <input type="text" placeholder="Please Enter Your Notes">
+    <hr/>
     <button id="add">Add Note</button>
-
-    <button>View Notes</button>
+    <hr/>
+    <button data-open="false" id="view">View Notes</button>
 
     <table></table>
 
